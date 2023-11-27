@@ -1,0 +1,23 @@
+[package]
+name = "ctx"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = {version = "4.4.8", features = ["color", "error-context", "help", "std", "suggestions", "usage", "derive"]}
+color-eyre = "0.6.2"
+gray_matter = "0.2.6"
+lazy_static = "1.4.0"
+once_cell = "1.18.0"
+pulldown-cmark = {version = "0.9.3", features = ["serde","simd"]}
+regex = "1.10.2"
+serde = { version = "1.0.193", features = ["std", "derive", "serde_derive"] }
+serde_json = "1.0.108"
+thiserror = "1.0.50"
+xxhash-rust = { version = "0.8.6", features = ["xxh3", "const_xxh64"] }
+tracing = "0.1.37"
+
+[dev-dependencies]
+tracing-subscriber = "0.3.16"
